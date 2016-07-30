@@ -1,0 +1,78 @@
+<ion-view view-title="车位信息">
+    <ion-content>
+        <div class="container-wrap">
+        <div class="select-list">
+                <select class="item-select">
+                    <option>总部</option>
+                    <option selected>广新办公区</option>
+                    <option>信义</option>
+                </select>
+        </div>
+        <div class="basic-info">
+            <div class="info-box">
+                <p class="seat-info">车位区域：{{info.area}}</p>
+                <p class="seat-info">车位期间：{{info.date}}</p>
+                <h3>车位有效期：</h3>
+                <h3>{{info.effectime}}</h3>
+            </div>
+        </div>
+        <div class="main-info">
+            <div class="count-info">
+                <ul>
+                    <li>
+                        <h1>{{info.count}}<span>个</span></h1>
+                        <p>车位数量</p>
+                    </li>
+                    <li>
+                        <h1>{{info.count}}<span>人</span></h1>
+                        <p>报名人数</p>
+                    </li>
+                    <li>
+                        <h1>{{info.count}}<span>%</span></h1>
+                        <p>中签率</p>
+                    </li>
+                </ul>
+            </div>
+            <div class="progress">
+                <div class="progress-default-line"></div>
+                <div class="progress-active-line"></div>
+                <ul>
+                    <li>
+                        <p class="date">7.2</p>
+                        <div class="little-line active-red"></div>
+                        <div class="little-dot active-red"></div>
+                        <h5>开始</h5>
+                    </li>
+                    <li>
+                        <p class="date">7.2</p>
+                        <div class="little-line"></div>
+                        <div class="little-dot"></div>
+                        <h5>报名截止</h5>
+                    </li>
+                    <li>
+                        <p class="date">7.2</p>
+                        <div class="little-line"></div>
+                        <div class="little-dot"></div>
+                        <h5>审核结束</h5>
+                    </li>
+                    <li>
+                        <p class="date">7.2</p>
+                        <div class="little-line"></div>
+                        <div class="little-dot"></div>
+                        <h5>抽签</h5>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="signIn">
+            <button class="signIn-btn">
+                我要报名
+            </button>
+        </div>
+        </div>
+    </ion-content>
+    <ion-footer-bar align-title="left" class="bar-assertive">
+        <p class="icon"></p>
+    </ion-footer-bar>
+</ion-view>
+
